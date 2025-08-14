@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SendOtpPage from './pages/SendOtpPage'
 import VerifyOtpPage from './pages/VerifyOtpPage'
 import Dashboard from './pages/Dashboard'
+import CreateBlog from './blog/createBlog'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,7 @@ function App() {
         <Route path="/login" element={<SendOtpPage/>} />
         <Route path='/verify' element={<VerifyOtpPage/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path="/createBlog" element={<CreateBlog />} />
       </Routes>
     </BrowserRouter>
   )

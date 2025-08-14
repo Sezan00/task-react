@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -18,6 +18,12 @@ const Dashboard = () => {
       >
         Logout
       </button>
+      <Link
+        to="/createBlog"
+        className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+      >
+        Create Blog Post
+      </Link>
     </div>
   );
 };
